@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    min-height: 1200px;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(5,1fr);
+    grid-template-areas: 
+    "lg lg lg sm sm"
+    "lg lg lg sm2 sm2"
+    "f f lg2 lg2 lg2"
+     "box box lg2 lg2 lg2"
+    ;
+    gap: 30px;
+}
+.lg{
+    background: url(./image/image_cat.jpg),url(./image/image_cat2.jpg) ;
+    background-color: blue;
+    grid-area: lg;
+}
+.sm{
+    background-color: black;
+    grid-area: sm;
+    color: #fff;
+    font-size: 30px;
+}
+.sm2{
+    background-color: brown;
+    grid-area: sm2;
+    font-size: 22px;
+}
+.lg2{
+    background: url(./image/image_cat2.jpg);
+    background-color: green;
+    grid-area: lg2;
+}
+.box{
+    color: crimson;
+    background-color: chocolate;
+    grid-area: box;
+    font-size: 22px;
+}
+.f{
+    color: black;
+    background-color: blanchedalmond;
+    grid-area: f;
+    font-size: 22px;
+}
